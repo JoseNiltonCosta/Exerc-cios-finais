@@ -4,10 +4,10 @@ public class ParesEImpares {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-      int a[]=new int[3];
+      int a[]=new int[20];
       
       
-      int b[]=new int[3];
+      int b[]=new int[20];
 
 		// TODO Auto-generated method stub
       
