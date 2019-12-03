@@ -1,0 +1,34 @@
+
+public class Primo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int numero[] = {5,7,15,10,9,12,3,8,18,20};
+		int primo=0;
+		int total=0;
+		int qtd = 0;
+								//laço para verificar o indice do vetor numero[]
+		for(int i = 0; i < numero.length; i++) {
+			
+			total=0;		//laço para verificar o valor dentro do indice numero[]
+			for(int j=1; j <=numero[i]; j++) {
+						
+				primo = numero[i] % j;
+				
+				if(primo == 0) {
+					total++;
+					
+				}
+				
+			}
+			if(total == 2) {
+				System.out.println(numero[i]+" É um numero primo ");
+				qtd++;
+				}
+			
+
+		}System.out.println("Existem "+qtd+"  numeros primos");
+	}
+	
+}
