@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class MenorMaior {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		  Scanner in = new Scanner (System.in);
+	        int a[] = new int[10];
+
+
+	        for(int i = 0; i < a.length; i++){
+	            System.out.print("Digite o " +(i+1)+"   numero: ");
+	            a[i] = in.nextInt();
+	        }
+
+
+	        int nmaior = a[0];
+	        for (int i = 1 ; i < a.length; i++){
+	                if ( a[i] > nmaior) {
+	                      nmaior =a[i];
+	               }
+	          }
+
+	        int nmenor = a[0];
+	        for (int i = 1; i < a.length; i++) {
+	            if(a[i] <nmenor){
+	                nmenor = a[i];
+	            }
+	        }
+	        System.out.println("Maior valor = "+ nmaior);
+	        System.out.println("Menor valor = "+ nmenor);
+	    }
+	}
