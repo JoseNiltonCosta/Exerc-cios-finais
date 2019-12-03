@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Palindromo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	    Scanner in = new Scanner(System.in);
+
+        int usuario, e, d,c, b, a;
+
+        System.out.print("Informe um valor inteiro de 5 casas: ");
+        usuario = in.nextInt();
+
+        while (usuario < 10000 || usuario > 99999){
+
+             System.out.print("Entrada Inválida Informe um valor inteiro de 5 casas");
+             usuario = in.nextInt();
+        }
+
+        e = usuario % 10;
+        usuario /= 10;
+
+        d = usuario % 10;
+        usuario /= 10;
+
+       c = usuario % 10;
+        c = c+ 0;
+        usuario /= 10;
+
+        b = usuario % 10;
+        usuario /= 10;
+
+        a= usuario % 10;
+
+        if (a == e && b == d){
+
+            System.out.println();
+            System.out.println("O número é um palíndromo!");
+        } else {
+
+            System.out.println();
+            System.out.println("O número não é um palíndromo!");
+        }
+    }
+}
